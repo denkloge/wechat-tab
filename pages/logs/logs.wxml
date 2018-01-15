@@ -1,0 +1,9 @@
+<view class="content">
+	<scroll-view class="tabButtonAll" id="tabButtonAll" scroll-x scroll-with-animation scroll-left="{{line.scrLeft}}">
+		<view class="tabBtn {{index == line.oldActive ? 'active' : ''}}" wx:for="{{list}}" bindtap="lineInfo" id="{{index}}">{{item.name}}</view>
+		<div class="line" style="width:{{line.width}}px;left:{{line.left}}px"></div>
+	</scroll-view>
+	<swiper current="{{line.swipeIndex}}" duration="300" bindchange="swipeChange"> 
+		<swiper-item wx:for="{{list}}">{{item.name}} 下面的内容</swiper-item>
+	</swiper>
+</view>

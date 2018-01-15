@@ -1,0 +1,8 @@
+page{height: 100%;}
+.content{height: 100%;padding-top: 90rpx;box-sizing:border-box;}
+.tabButtonAll{height: 90rpx;white-space: nowrap;background: #ccc;font-size:0;position:fixed;left: 0;top: 0;width: 100%;}
+.tabBtn{display: inline-block;height: 90rpx;line-height: 90rpx;margin: 0 20rpx;font-size:32rpx;transition:all 0.3s;}
+.tabBtn.active{color: red;}
+.tabButtonAll .line{display: block;height: 6rpx;background:red;position:absolute;bottom: 0;top: 84rpx;transition:all 0.3s;border-radius:3rpx;}
+
+swiper{display: block;height: 100%;}
